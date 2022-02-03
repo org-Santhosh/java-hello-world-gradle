@@ -1,4 +1,4 @@
 ---
 applications:
 - name: application-name-final
-  path: /github/workspace/src/
+  path: /github/workspace/build/libs/jb-hello-world-0.1.0.jar
