@@ -27,6 +27,10 @@ jobs:
         uses: gradle/gradle-build-action@4137be6a8bf7d7133955359dbd952c0ca73b1021
         with:
           arguments: build
+          
+      - run: |
+          echo "-------"
+          ls '${{ github.workspace }}'/build/libs
 
       - name: Step 7 - Deploy to CF
         uses: jhunt/cf-push@v1
